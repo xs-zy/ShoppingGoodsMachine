@@ -17,5 +17,5 @@ import retrofit2.http.Query;
 
 public interface LoginApi {
     @POST(Urls.MACHINELOGIN)
-    Call<LoginBean> getResult(@Query("loginInfo") String loginInfo);
+    Call<LoginBean> getResult(@Query("machineId") long machineId,@Query("pwd") String pwd);
 }

@@ -10,6 +10,7 @@ import android.net.wifi.WifiManager;
  */
 
 public class MacUtil {
+    public static final String PWD = "009624";
     public static String getLocalMacAddress(Context context){
         WifiManager manger = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
         WifiInfo wifiInfo = manger.getConnectionInfo();

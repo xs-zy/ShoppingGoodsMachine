@@ -227,9 +227,10 @@ public class MainActivity extends BaseActivity implements DevicesStateListener {
                 if ("1".equals(status)) {
                     //获取数据成功
                     List<PictureBean.DataBean> data = response.body().getData();
-                    if(data.size() == 0){
+                    if(data.size() != 0){
                         for(int i=0;i<data.size();i++){
                             image_list.add(data.get(i).getAdContent());
+                            Log.d("v_zyuanxue",data.get(i).getAdContent());
                         }
                     }else {
                         image_list.add("a.jpg");
